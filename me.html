@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Roadmap</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #2c2c2c);
+            color: #f0f0f0;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 50px;
+            text-shadow: 0 0 20px #ff7f50;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #ffb380;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin: 50px 0 20px;
+            text-shadow: 0 0 10px #ff9933;
+            animation: slideIn 1s ease;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            animation: fadeUp 1.3s ease;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(7px);
+            box-shadow: 0 0 15px rgba(255, 127, 80, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 25px #ff7f50;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 20px;
+            border-left: 6px solid #ff7f50;
+            border-radius: 12px;
+            margin: 25px 0;
+            animation: fadeBox 1.2s ease;
+        }
+
+        .home-btn {
+            display: block;
+            width: 220px;
+            margin: 50px auto;
+            padding: 14px;
+            text-align: center;
+            background: #ff7f50;
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeBox {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mechanical Engineering Roadmap</h1>
+        <p>Design • Manufacturing • Thermal • Robotics • Industrial • Careers</p>
+    </header>
+
+    <div class="container">
+
+        <!-- 1st YEAR -->
+        <h2 class="section-title">📘 1st Year – Foundation</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Subjects:</strong>
+                <ul>
+                    <li>Engineering Mathematics</li>
+                    <li>Engineering Physics & Chemistry</li>
+                    <li>Basic Mechanical Engineering</li>
+                    <li>Engineering Graphics</li>
+                    <li>Workshop Practice</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Skills:</strong>
+                <ul>
+                    <li>Hands-on workshop experience</li>
+                    <li>CAD basics</li>
+                    <li>Mathematical modeling</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2nd YEAR -->
+        <h2 class="section-title">📗 2nd Year – Core Mechanical</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Subjects:</strong>
+                <ul>
+                    <li>Thermodynamics</li>
+                    <li>Fluid Mechanics</li>
+                    <li>Material Science</li>
+                    <li>Strength of Materials</li>
+                    <li>Mechanics of Machines</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Skills:</strong>
+                <ul>
+                    <li>3D CAD Modeling (SolidWorks, CATIA)</li>
+                    <li>Simulation basics (ANSYS)</li>
+                    <li>Lab experiments in fluid and material testing</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3rd YEAR -->
+        <h2 class="section-title">📙 3rd Year – Advanced Mechanical</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Subjects:</strong>
+                <ul>
+                    <li>Automobile Engineering</li>
+                    <li>Manufacturing Technology</li>
+                    <li>Heat Transfer</li>
+                    <li>Machine Design</li>
+                    <li>Industrial Engineering</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Projects & Labs:</strong>
+                <ul>
+                    <li>CAD/CAM projects</li>
+                    <li>Thermal system experiments</li>
+                    <li>Robotics & Automation mini-projects</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4th YEAR -->
+        <h2 class="section-title">📒 4th Year – Specialization & Placement</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Subjects:</strong>
+                <ul>
+                    <li>Mechatronics</li>
+                    <li>Robotics & Automation</li>
+                    <li>Advanced Manufacturing</li>
+                    <li>Energy Systems</li>
+                    <li>Industrial Project Work</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Goals:</strong>
+                <ul>
+                    <li>Major projects & internships</li>
+                    <li>Industry visits</li>
+                    <li>Placement preparation</li>
+                    <li>Resume & portfolio building</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Specializations -->
+        <h2 class="section-title">🎯 Mechanical Specializations</h2>
+
+        <div class="info-box">
+            <strong>1. Thermal Engineering</strong> – HVAC, turbines, heat exchangers, energy systems.
+        </div>
+
+        <div class="info-box">
+            <strong>2. Design & CAD/CAM</strong> – AutoCAD, SolidWorks, CATIA, NX.
+        </div>
+
+        <div class="info-box">
+            <strong>3. Robotics & Automation</strong> – PLC, industrial robots, IoT-based automation.
+        </div>
+
+        <div class="info-box">
+            <strong>4. Manufacturing & Production</strong> – Lean manufacturing, CNC, 3D printing.
+        </div>
+
+        <div class="info-box">
+            <strong>5. Automobile Engineering</strong> – Vehicle dynamics, engines, EV design.
+        </div>
+
+        <!-- Career & Companies -->
+        <h2 class="section-title">💼 Career Opportunities</h2>
+
+        <div class="cards">
+            <div class="card">
+                <strong>Job Roles:</strong>
+                <ul>
+                    <li>Design Engineer</li>
+                    <li>Thermal Engineer</li>
+                    <li>Robotics Engineer</li>
+                    <li>Automobile Engineer</li>
+                    <li>Production/Operations Engineer</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <strong>Top Companies:</strong>
+                <ul>
+                    <li>Tata Motors</li>
+                    <li>Bosch</li>
+                    <li>Mahindra & Mahindra</li>
+                    <li>Larsen & Toubro</li>
+                    <li>Maruti Suzuki</li>
+                    <li>Siemens, GE</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Exams -->
+        <h2 class="section-title">📚 Exams & Higher Studies</h2>
+
+        <div class="info-box">
+            <strong>1. GATE Mechanical</strong> – M.Tech, PSUs (BHEL, NTPC)
+            <br><strong>2. GRE / TOEFL</strong> – Study Abroad
+            <br><strong>3. Competitive Exams</strong> – UPSC, State PSC, SSC JE
+            <br><strong>4. Certifications</strong> – SolidWorks, CATIA, ANSYS, PLC
+        </div>
+
+        <!-- Home Button -->
+        <a href="index.html" class="home-btn">⬅ Back To Home</a>
+
+    </div>
+</body>
+
+</html>

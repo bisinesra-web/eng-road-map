@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech Roadmap</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgv6wwWR5WeMTMD-s-DiqZeKlsi99tf6K5g&s");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            backdrop-filter: blur(2px);
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #723d04;
+            font-size: 45px;
+            margin-bottom: 25px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1100px;
+            animation: slideUp 1.2s ease;
+        }
+
+        .card {
+            background: rgba(209, 169, 74, 0.15);
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            color: rgb(176, 215, 17);
+            font-size: 22px;
+            font-weight: bold;
+            backdrop-filter: blur(5px);
+            cursor: pointer;
+            transition: 0.3s;
+            border: 1px solid rgba(39, 26, 150, 0.2);
+        }
+
+        .card:hover {
+            transform: scale(1.08);
+            background: rgba(55, 29, 207, 0.3);
+            box-shadow: 0 0 20px rgba(11, 204, 34, 0.6);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>B.Tech Roadmap – Choose Your Branch</h1>
+
+        <div class="container">
+            <div class="card" onclick="location.href='cse.html'">Computer Science (CSE)</div>
+            <div class="card" onclick="location.href='ece.html'">Electronics (ECE)</div>
+            <div class="card" onclick="location.href='eee.html'">Electrical (EEE)</div>
+            <div class="card" onclick="location.href='cve.html'">Civil Engineering</div>
+            <div class="card" onclick="location.href='me.html'">Mechanical (ME)</div>
+            <div class="card" onclick="location.href='bt.html'">Bio Technology</div>
+            <div class="card" onclick="location.href='ch.html'">Chemical Engineering</div>
+            <div class="card" onclick="location.href='it.html'">Information Technology</div>
+            <div class="card" onclick="location.href='ai,ml,cyber,ds.html'">AI, ML, Cybersecurity & Data Science</div>
+            <div class="card" onclick="location.href='other.html'">Other Branches</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI, ML, Cybersecurity & Data Science Roadmap</title>
+
+    <style>
+        /* --------- Body & Fonts --------- */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #0f3460, #162447);
+            color: #f0f0f0;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: black;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 55px;
+            text-shadow: 0 0 25px #ffffff;
+        }
+
+        header p {
+            font-size: 22px;
+            color: #f0f0f0;
+        }
+
+        /* --------- Container --------- */
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+
+        /* --------- Section Titles --------- */
+        .section-title {
+            font-size: 34px;
+            margin: 50px 0 20px;
+            text-shadow: 0 0 15px #00ffff;
+            animation: slideIn 1s ease;
+        }
+
+        /* --------- Cards --------- */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            animation: fadeUp 1.3s ease;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(7px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 35px #00ffff;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        /* --------- Info Boxes --------- */
+        .info-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-left: 8px solid #00ffff;
+            border-radius: 15px;
+            margin: 30px 0;
+            animation: fadeBox 1.2s ease;
+            line-height: 1.8;
+        }
+
+        .info-box strong {
+            color: #00ffff;
+        }
+
+        /* --------- Home Button --------- */
+        .home-btn {
+            display: block;
+            width: 240px;
+            margin: 50px auto;
+            padding: 16px;
+            text-align: center;
+            background: #00ffff;
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        /* --------- Text Highlights --------- */
+        .highlight {
+            color: #ffdd33;
+            font-weight: bold;
+        }
+
+        /* --------- Animations --------- */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeBox {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* --------- Interactive Expand/Collapse --------- */
+        .collapsible {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #00ffff;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 22px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .collapsible:hover {
+            background-color: rgba(0, 255, 255, 0.15);
+        }
+
+        .active,
+        .collapsible:after {
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* --------- Code block style for examples --------- */
+        .code-block {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            border-radius: 12px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: monospace;
+            font-size: 15px;
+            color: #00ffcc;
+        }
+
+        /* --------- Lists with icons --------- */
+        ul li::before {
+            content: "✔ ";
+            color: #00ffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>AI, ML, Cybersecurity & Data Science Roadmap</h1>
+        <p>Complete Detailed Guide: From Basics to Advanced, Career Paths, Tools & Projects</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Introduction -->
+        <h2 class="section-title">📘 Introduction</h2>
+        <div class="info-box">
+            Artificial Intelligence (AI), Machine Learning (ML), Cybersecurity, and Data Science are the **most
+            in-demand fields** today. This roadmap covers **basics to advanced topics, tools, frameworks, projects,
+            specializations, and career opportunities**.
+            These branches integrate programming, statistics, algorithms, data management, and security, suitable for
+            **innovators, researchers, and industry professionals**.
+        </div>
+
+        <!-- 1st Year / Fundamentals -->
+        <h2 class="section-title">📗 1st Year – Fundamentals</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Core Topics:</strong>
+                <ul>
+                    <li>Programming Basics: Python, R, Java</li>
+                    <li>Mathematics for Computing: Linear Algebra, Probability, Calculus</li>
+                    <li>Introduction to Algorithms & Data Structures</li>
+                    <li>Computer Networks Basics</li>
+                    <li>Digital Logic & Basics of Computer Architecture</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Skills:</strong>
+                <ul>
+                    <li>Basic programming problem-solving</li>
+                    <li>Understanding mathematical foundations</li>
+                    <li>Simple coding projects</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2nd Year -->
+        <h2 class="section-title">📙 2nd Year – Intermediate Topics</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>AI & ML Foundations:</strong>
+                <ul>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Python Libraries: Numpy, Pandas, Matplotlib</li>
+                    <li>Introduction to Machine Learning</li>
+                    <li>Supervised & Unsupervised Learning</li>
+                    <li>Statistics for Data Science</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Cybersecurity Foundations:</strong>
+                <ul>
+                    <li>Network Fundamentals</li>
+                    <li>Operating System Security</li>
+                    <li>Introduction to Ethical Hacking</li>
+                    <li>Cryptography Basics</li>
+                    <li>Security Protocols & Firewalls</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects & Labs -->
+        <h2 class="section-title">💻 Projects & Labs</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>AI & ML Labs:</strong>
+                <ul>
+                    <li>Linear Regression & Classification Projects</li>
+                    <li>Clustering & Data Analysis Projects</li>
+                    <li>Hands-on Python ML Libraries</li>
+                    <li>Mini Projects: Stock Prediction, Chatbots</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Cybersecurity Labs:</strong>
+                <ul>
+                    <li>Wireshark Packet Analysis</li>
+                    <li>Penetration Testing Labs</li>
+                    <li>Cryptography Implementation</li>
+                    <li>Security Audit Exercises</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Advanced Topics -->
+        <h2 class="section-title">🚀 Advanced Topics (3rd-4th Year)</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Machine Learning & AI:</strong>
+                <ul>
+                    <li>Deep Learning: CNN, RNN, LSTM, GANs</li>
+                    <li>Natural Language Processing (NLP)</li>
+                    <li>Computer Vision & Image Processing</li>
+                    <li>Reinforcement Learning & Robotics</li>
+                    <li>AI Deployment & Model Optimization</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Cybersecurity Advanced:</strong>
+                <ul>
+                    <li>Advanced Cryptography</li>
+                    <li>Cloud Security & Blockchain Security</li>
+                    <li>Web & Application Security</li>
+                    <li>Digital Forensics</li>
+                    <li>Ethical Hacking & Vulnerability Assessment</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Data Science Advanced:</strong>
+                <ul>
+                    <li>Big Data Tools: Hadoop, Spark</li>
+                    <li>Data Visualization & Dashboarding</li>
+                    <li>Time Series Analysis & Forecasting</li>
+                    <li>Recommender Systems & AI Analytics</li>
+                    <li>Data Pipelines & ETL Processes</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Specializations -->
+        <h2 class="section-title">🎯 Specializations</h2>
+        <div class="info-box">
+            <strong>AI Specializations:</strong> NLP, Computer Vision, Robotics, Autonomous Systems, AI in
+            Healthcare<br>
+            <strong>ML Specializations:</strong> Deep Learning, Reinforcement Learning, ML Ops, Predictive Analytics<br>
+            <strong>Cybersecurity Specializations:</strong> Ethical Hacking, Digital Forensics, Network Security, Cloud
+            Security<br>
+            <strong>Data Science Specializations:</strong> Big Data, Business Analytics, Financial Analytics, IoT Data
+            Analytics
+        </div>
+
+        <!-- Tools & Frameworks -->
+        <h2 class="section-title">🛠 Tools & Frameworks</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Programming & Libraries:</strong>
+                <ul>
+                    <li>Python, R, SQL, Java</li>
+                    <li>Numpy, Pandas, Scikit-learn, TensorFlow, PyTorch</li>
+                    <li>Matplotlib, Seaborn, Plotly</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Cybersecurity Tools:</strong>
+                <ul>
+                    <li>Wireshark, Metasploit, Nmap, Burp Suite</li>
+                    <li>OpenVAS, Snort, Kali Linux Tools</li>
+                    <li>Hashcat, CyberArk, Nessus</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Data Science & Big Data:</strong>
+                <ul>
+                    <li>Hadoop, Spark, Tableau, Power BI</li>
+                    <li>SQL & NoSQL Databases (MongoDB, Cassandra)</li>
+                    <li>Airflow, Docker, MLflow for pipeline management</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Career Opportunities -->
+        <h2 class="section-title">💼 Career Opportunities</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>AI & ML Roles:</strong>
+                <ul>
+                    <li>AI Engineer, ML Engineer, Data Scientist</li>
+                    <li>Deep Learning Specialist</li>
+                    <li>Computer Vision Engineer</li>
+                    <li>AI Researcher</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Cybersecurity Roles:</strong>
+                <ul>
+                    <li>Security Analyst, Ethical Hacker, Pen Tester</li>
+                    <li>Digital Forensics Expert</li>
+                    <li>Security Architect, Cloud Security Engineer</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Data Science Roles:</strong>
+                <ul>
+                    <li>Data Scientist, Data Analyst, Big Data Engineer</li>
+                    <li>Business Analyst, Predictive Analytics Expert</li>
+                    <li>ML Ops Engineer</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects / Real World Applications -->
+        <h2 class="section-title">🛠 Projects & Applications</h2>
+        <div class="info-box">
+            <ul>
+                <li>AI: Chatbots, Self-driving car simulations, Image & speech recognition, Medical diagnostics AI</li>
+                <li>ML: Stock market prediction, Recommendation systems, Fraud detection, Predictive maintenance</li>
+                <li>Cybersecurity: Penetration testing labs, Secure network design, Malware analysis</li>
+                <li>Data Science: Sales prediction dashboards, Customer segmentation, IoT analytics, Big Data pipelines
+                </li>
+            </ul>
+        </div>
+
+        <!-- Exams & Certifications -->
+        <h2 class="section-title">📚 Exams & Certifications</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>AI / ML / Data Science Certifications:</strong>
+                <ul>
+                    <li>Google AI / ML Certification</li>
+                    <li>IBM Data Science Professional Certificate</li>
+                    <li>Microsoft Azure AI Engineer</li>
+                    <li>TensorFlow Developer Certificate</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Cybersecurity Certifications:</strong>
+                <ul>
+                    <li>CEH (Certified Ethical Hacker)</li>
+                    <li>CISSP (Certified Information Systems Security Professional)</li>
+                    <li>CompTIA Security+</li>
+                    <li>OSCP (Offensive Security Certified Professional)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Higher Studies -->
+        <h2 class="section-title">🎓 Higher Studies</h2>
+        <div class="info-box">
+            <ul>
+                <li>M.Tech / MS in AI, ML, Cybersecurity, Data Science</li>
+                <li>PhD in AI / ML / Cybersecurity</li>
+                <li>Research in NLP, Deep Learning, Quantum ML</li>
+                <li>Opportunities in top universities: MIT, Stanford, CMU, IITs</li>
+            </ul>
+        </div>
+
+        <!-- Collapsible FAQs -->
+        <h2 class="section-title">❓ FAQs / Tips</h2>
+        <button class="collapsible">How to start learning AI & ML?</button>
+        <div class="content">
+            <p>Start with Python programming, learn linear algebra and probability, then use ML libraries (Scikit-learn,
+                TensorFlow) for small projects.</p>
+        </div>
+
+        <button class="collapsible">Best resources for Cybersecurity?</button>
+        <div class="content">
+            <p>Use online platforms like TryHackMe, HackTheBox, Cybrary, and practice with labs on Kali Linux and
+                virtual networks.</p>
+        </div>
+
+        <button class="collapsible">How to choose specialization in Data Science?</button>
+        <div class="content">
+            <p>Focus on your interest: Big Data, Business Analytics, AI/ML applications, or IoT Data Analytics, based on
+                industry demand and internships.</p>
+        </div>
+
+        <!-- Back to Home -->
+        <a href="index.html" class="home-btn">⬅ Back To Home</a>
+
+    </div>
+
+    <script>
+        // Collapsible script
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

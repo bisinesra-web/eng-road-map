@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Engineering Roadmap</title>
+    <style>
+        /* Body & fonts */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #f0f0f0;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(90deg, #ff6a00, #ee0979);
+            color: black;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 50px;
+            text-shadow: 0 0 20px #ffffff;
+        }
+
+        header p {
+            font-size: 22px;
+            color: #f0f0f0;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 32px;
+            margin: 50px 0 20px;
+            text-shadow: 0 0 10px #ffdd33;
+            animation: slideIn 1s ease;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            animation: fadeUp 1.3s ease;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 25px;
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(7px);
+            box-shadow: 0 0 20px rgba(255, 221, 51, 0.1);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 35px #ffdd33;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.7;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
+            border-left: 8px solid #ffdd33;
+            border-radius: 15px;
+            margin: 30px 0;
+            animation: fadeBox 1.2s ease;
+            line-height: 1.8;
+        }
+
+        .info-box strong {
+            color: #ffdd33;
+        }
+
+        /* Home Button */
+        .home-btn {
+            display: block;
+            width: 220px;
+            margin: 50px auto;
+            padding: 14px;
+            text-align: center;
+            background: #ffdd33;
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeBox {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Collapsible */
+        .collapsible {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: #ffdd33;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 22px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .collapsible:hover {
+            background-color: rgba(255, 221, 51, 0.15);
+        }
+
+        .active,
+        .collapsible:after {
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* Code block style */
+        .code-block {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            border-radius: 12px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: monospace;
+            font-size: 15px;
+            color: #ffdd33;
+        }
+
+        ul li::before {
+            content: "✔ ";
+            color: #ffdd33;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Chemical Engineering Roadmap</h1>
+        <p>From Fundamentals to Advanced Career Paths & Industrial Opportunities</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Introduction -->
+        <h2 class="section-title">📘 Introduction</h2>
+        <div class="info-box">
+            Chemical Engineering combines **chemistry, physics, biology, and mathematics** to develop **processes for
+            manufacturing, energy, materials, and chemicals**. This roadmap covers **core subjects, labs, projects,
+            tools, specializations, internships, and career opportunities**.
+        </div>
+
+        <!-- 1st Year -->
+        <h2 class="section-title">📗 1st Year – Fundamentals</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Core Subjects:</strong>
+                <ul>
+                    <li>Engineering Mathematics I & II</li>
+                    <li>Physics & Chemistry</li>
+                    <li>Engineering Mechanics & Drawing</li>
+                    <li>Introduction to Chemical Engineering</li>
+                    <li>Computer Programming Basics</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Skills:</strong>
+                <ul>
+                    <li>Basic chemical calculations</li>
+                    <li>Problem-solving skills</li>
+                    <li>Basic lab safety & experiments</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2nd Year -->
+        <h2 class="section-title">📙 2nd Year – Core Chemical Engineering</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Core Subjects:</strong>
+                <ul>
+                    <li>Material & Energy Balances</li>
+                    <li>Fluid Mechanics</li>
+                    <li>Thermodynamics (Chemical)</li>
+                    <li>Heat & Mass Transfer</li>
+                    <li>Chemical Process Calculations</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Labs:</strong>
+                <ul>
+                    <li>Fluid Flow Experiments</li>
+                    <li>Heat Transfer Lab</li>
+                    <li>Chemical Reaction Lab</li>
+                    <li>Process Simulation Software Basics</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3rd Year -->
+        <h2 class="section-title">🚀 3rd Year – Advanced Topics</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Core Subjects:</strong>
+                <ul>
+                    <li>Chemical Reaction Engineering</li>
+                    <li>Process Dynamics & Control</li>
+                    <li>Mass Transfer Operations</li>
+                    <li>Separation Processes</li>
+                    <li>Process Design & Simulation</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Projects:</strong>
+                <ul>
+                    <li>Mini-plant design simulations</li>
+                    <li>Energy efficiency optimization</li>
+                    <li>Wastewater treatment modeling</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4th Year -->
+        <h2 class="section-title">📘 4th Year – Specialization & Industry</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Specialization Subjects:</strong>
+                <ul>
+                    <li>Petrochemical Engineering</li>
+                    <li>Polymer Technology</li>
+                    <li>Biochemical Engineering</li>
+                    <li>Process Safety & Hazard Analysis</li>
+                    <li>Environmental Engineering</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Industry & Internship:</strong>
+                <ul>
+                    <li>Internships in chemical plants & pharma companies</li>
+                    <li>Process optimization projects</li>
+                    <li>Energy & sustainability projects</li>
+                    <li>Research-based internships</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tools & Software -->
+        <h2 class="section-title">🛠 Tools & Software</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Simulation & Design:</strong>
+                <ul>
+                    <li>ASPEN HYSYS / Plus</li>
+                    <li>MATLAB & Simulink</li>
+                    <li>COMSOL Multiphysics</li>
+                    <li>AutoCAD & Process Flow Diagrams</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Lab Tools:</strong>
+                <ul>
+                    <li>Chemical analysis instruments</li>
+                    <li>Chromatography, Spectroscopy</li>
+                    <li>Reaction calorimetry</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Career Opportunities -->
+        <h2 class="section-title">💼 Career Opportunities</h2>
+        <div class="cards">
+            <div class="card">
+                <strong>Industries:</strong>
+                <ul>
+                    <li>Petrochemicals, Oil & Gas, Fertilizers</li>
+                    <li>Pharmaceuticals, Polymers, Food Processing</li>
+                    <li>Environmental & Waste Management</li>
+                    <li>Energy & Renewable Energy</li>
+                </ul>
+            </div>
+            <div class="card">
+                <strong>Roles:</strong>
+                <ul>
+                    <li>Process Engineer, Design Engineer</li>
+                    <li>Production & Operations Engineer</li>
+                    <li>Quality Control & Safety Engineer</li>
+                    <li>Research Scientist</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Exams & Higher Studies -->
+        <h2 class="section-title">🎓 Exams & Higher Studies</h2>
+        <div class="info-box">
+            <ul>
+                <li>GATE (Chemical Engineering) for PSUs & M.Tech</li>
+                <li>GRE / TOEFL / IELTS for abroad higher studies</li>
+                <li>PhD in Chemical Engineering / Process Engineering / Biochemical Engineering</li>
+                <li>Certifications: Six Sigma, Process Safety Certification</li>
+            </ul>
+        </div>
+
+        <!-- Projects & Innovations -->
+        <h2 class="section-title">🛠 Projects & Innovations</h2>
+        <div class="info-box">
+            <ul>
+                <li>Process Optimization in chemical plants</li>
+                <li>Green chemistry & sustainability projects</li>
+                <li>Biochemical reactor design & fermentation experiments</li>
+                <li>Wastewater treatment & pollution control projects</li>
+                <li>Energy efficiency & renewable energy projects</li>
+            </ul>
+        </div>
+
+        <!-- FAQs / Tips -->
+        <h2 class="section-title">❓ FAQs / Tips</h2>
+        <button class="collapsible">How to start Chemical Engineering projects?</button>
+        <div class="content">
+            <p>Start with lab experiments in heat & mass transfer, fluid mechanics, and reaction engineering simulations
+                using ASPEN or MATLAB.</p>
+        </div>
+
+        <button class="collapsible">What are top companies for internships?</button>
+        <div class="content">
+            <p>Reliance, GAIL, BASF, Dow Chemicals, Indian Oil, Dr. Reddy’s Labs, Infosys (R&D), Tata Chemicals.</p>
+        </div>
+
+        <button class="collapsible">Which specialization is high demand?</button>
+        <div class="content">
+            <p>Petrochemicals, Biochemical & Pharma, Environmental Engineering, and Process Safety Engineering are
+                currently high in demand.</p>
+        </div>
+
+        <!-- Back to Home -->
+        <a href="index.html" class="home-btn">⬅ Back To Home</a>
+
+    </div>
+
+    <script>
+        // Collapsible script
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
